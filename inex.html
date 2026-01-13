@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>صدقة جارية | أحمد القطيشي</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: linear-gradient(to bottom, #020617, #0f172a);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 35px;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #22c55e;
+  color: black;
+  cursor: pointer;
+}
+
+.count {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #facc15;
+}
+
+.dua {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<h1>صدقة جارية 🤍</h1>
+<p>عن روح</p>
+<h2>أحمد القطيشي</h2>
+
+<img src="qotishy.png" alt="أحمد القطيشي">
+
+<button onclick="tasbeeh()">سبحان الله</button>
+<div class="count" id="tasbeeh">0</div>
+
+<button onclick="istighfar()">استغفر الله</button>
+<div class="count" id="istighfar">0</div>
+
+<div class="dua">
+  <p>
+  اللهم اغفر لعبدك أحمد القطيشي،  
+  وارحمه، وعافه واعفُ عنه،  
+  وأكرم نزله، ووسع مدخله،  
+  ونقه من الذنوب كما ينقى الثوب الأبيض من الدنس،  
+  واجعل قبره روضة من رياض الجنة 🤲
+  </p>
+</div>
+
+<div class="footer">
+  كل تسبيحة واستغفار هنا هي صدقة جارية عن روحه بإذن الله
+</div>
+
+<script>
+let t = 0;
+let i = 0;
+
+function tasbeeh() {
+  t++;
+  document.getElementById("tasbeeh").innerText = t;
+}
+
+function istighfar() {
+  i++;
+  document.getElementById("istighfar").innerText = i;
+}
+</script>
+
+</body>
+</html>
